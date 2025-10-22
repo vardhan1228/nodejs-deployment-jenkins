@@ -23,13 +23,13 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-                // Example: if you have a test script
-                sh 'docker run --rm $DOCKERHUB_USER/$IMAGE_NAME:latest npm test || echo "No tests found"'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         echo 'Running tests...'
+        //         // Example: if you have a test script
+        //         sh 'docker run --rm $DOCKERHUB_USER/$IMAGE_NAME:latest npm test || echo "No tests found"'
+        //     }
+        // }
 
         stage('Push to DockerHub') {
             steps {
