@@ -37,13 +37,13 @@ This guide explains how to set up Jenkins on an AWS EC2 Linux instance and confi
 
 2. Install Java:
    ```bash
-sudo dnf install java-17-amazon-corretto -y
+    sudo dnf install java-17-amazon-corretto -y
    ```
 
 3. Add Jenkins repository:
    ```bash
    sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
    ```
 
 4. Install Jenkins:
