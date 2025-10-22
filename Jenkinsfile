@@ -1,13 +1,15 @@
 pipeline {
-    agent any
-
+    agent any 
+    tools {
+        jdk 'java'
+        nodejs 'nodejs'
+    }
     environment {
         IMAGE_NAME = 'nodejs'
         DOCKERHUB_USER = 'vardhan1228'
     }
 
     stages {
-
         stage('Checkout') {
             steps {
                 checkout scm
