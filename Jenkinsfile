@@ -1,9 +1,9 @@
 pipeline {
     agent any 
-    tools {
-        jdk 'java'
-        nodejs 'nodejs'
-    }
+    // tools {
+    //     jdk 'java'
+    //     nodejs 'nodejs'
+    // }
     environment {
         IMAGE_NAME = 'nodejs'
         DOCKERHUB_USER = 'vardhan1228'
