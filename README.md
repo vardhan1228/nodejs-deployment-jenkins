@@ -33,6 +33,7 @@ This guide explains how to set up Jenkins on an AWS EC2 Linux instance and confi
 1. Update the system:
    ```bash
    sudo yum update -y
+   sudo yum install git -y
    ```
 
 2. Install Java:
